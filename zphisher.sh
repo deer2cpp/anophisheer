@@ -203,27 +203,28 @@ check_status() {
 ## Banner
 banner() {
 	cat <<- EOF
-		${ORANGE}
-		${ORANGE} ______      _     _     _               
-		${ORANGE}|___  /     | |   (_)   | |              
-		${ORANGE}   / / _ __ | |__  _ ___| |__   ___ _ __ 
-		${ORANGE}  / / | '_ \| '_ \| / __| '_ \ / _ \ '__|
-		${ORANGE} / /__| |_) | | | | \__ \ | | |  __/ |   
-		${ORANGE}/_____| .__/|_| |_|_|___/_| |_|\___|_|   
-		${ORANGE}      | |                                
-		${ORANGE}      |_|                ${RED}Version : ${__version__}
+	${ORANGE}                          _     _     _                    
+        ${ORANGE}   __ _ _ __   ___  _ __ | |__ (_)___| |__   ___  ___ _ __ 
+        ${ORANGE}  / _` | '_ \ / _ \| '_ \| '_ \| / __| '_ \ / _ \/ _ \ '__|
+        ${ORANGE} | (_| | | | | (_) | |_) | | | | \__ \ | | |  __/  __/ |   
+         ${ORANGE} \__,_|_| |_|\___/| .__/|_| |_|_|___/_| |_|\___|\___|_|   
+                ${ORANGE}           |_|                                                                    
+		${ORANGE}                         ${RED}Version : ${__version__}
 
 		${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Created by htr-tech (tahmid.rayat)${WHITE}
+                ${GREEN}[${WHITE}-${GREEN}]${CYAN} Tool Upgraded by anoneer (anoneercontact@gmail.com)${WHITE}
 	EOF
 }
 
 ## Small Banner
 banner_small() {
 	cat <<- EOF
-		${BLUE}
-		${BLUE}  ░▀▀█░█▀█░█░█░▀█▀░█▀▀░█░█░█▀▀░█▀▄
-		${BLUE}  ░▄▀░░█▀▀░█▀█░░█░░▀▀█░█▀█░█▀▀░█▀▄
-		${BLUE}  ░▀▀▀░▀░░░▀░▀░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀░▀${WHITE} ${__version__}
+	${BLUE} ·····················································
+        ${BLUE} :           __   __          __        ___  ___  __ :
+        ${BLUE} : /\  |\ | /  \ |__) |__| | /__` |__| |__  |__  |__):
+        ${BLUE} :/~~\ | \| \__/ |    |  | | .__/ |  | |___ |___ |  \:
+        ${BLUE} ·····················································
+		${BLUE}                                  ${WHITE} ${__version__}
 	EOF
 }
 
@@ -341,7 +342,7 @@ install_localxpose() {
 ## Exit message
 msg_exit() {
 	{ clear; banner; echo; }
-	echo -e "${GREENBG}${BLACK} Thank you for using this tool. Have a good day.${RESETBG}\n"
+	echo -e "${GREENBG}${BLACK} Thank you for using this tool !${RESETBG}\n"
 	{ reset_color; exit 0; }
 }
 
@@ -350,19 +351,17 @@ about() {
 	{ clear; banner; echo; }
 	cat <<- EOF
 		${GREEN} Author   ${RED}:  ${ORANGE}TAHMID RAYAT ${RED}[ ${ORANGE}HTR-TECH ${RED}]
+                ${GREEN} Author: anoneer
 		${GREEN} Github   ${RED}:  ${CYAN}https://github.com/htr-tech
 		${GREEN} Social   ${RED}:  ${CYAN}https://tahmidrayat.is-a.dev
 		${GREEN} Version  ${RED}:  ${ORANGE}${__version__}
 
 		${WHITE} ${REDBG}Warning:${RESETBG}
 		${CYAN}  This Tool is made for educational purpose 
-		  only ${RED}!${WHITE}${CYAN} Author will not be responsible for 
+		  only ${RED}!${WHITE}${CYAN} Authors will not be responsible for 
 		  any misuse of this toolkit ${RED}!${WHITE}
 		
-		${WHITE} ${CYANBG}Special Thanks to:${RESETBG}
-		${GREEN}  1RaY-1, Adi1090x, AliMilani, BDhackers009,
-		  KasRoudra, E343IO, sepp0, ThelinuxChoice,
-		  Yisus7u7
+		
 
 		${RED}[${WHITE}00${RED}]${ORANGE} Main Menu     ${RED}[${WHITE}99${RED}]${ORANGE} Exit
 
